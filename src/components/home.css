@@ -1,0 +1,28 @@
+.star-div>img{
+
+    width:30px ;
+}
+.center-square{
+
+    animation: spin 15s linear infinite ;
+}
+.down-square{
+
+    animation: spin_two 15s linear infinite   ;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin_two {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
