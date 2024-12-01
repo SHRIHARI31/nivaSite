@@ -1,57 +1,78 @@
-import React from 'react'
-import './home.css'
+import React from 'react';
+import './home.css';
+import Footer from './Footer';
+
 const Home = () => {
     return (
-        <div className='relative mt-20'>
-            <section className='  relative  w-full'>
-                <img src="https://www.svgrepo.com/show/285729/award-champion.svg" alt="" className='w-[200px] z-[-1]   left-1/2 -translate-x-1/2  absolute ' />
+        <div className="relative mt-20">
+            <section className="relative w-full">
+                <img
+                    src="https://www.svgrepo.com/show/285729/award-champion.svg"
+                    alt=""
+                    className="w-[100px] md:w-[200px] z-[-1] left-1/2 -translate-x-1/2 absolute"
+                />
             </section>
-            <section className='  py-20 backdrop-blur-[1px]  z-[1]'>
-                <div className=" flex  justify-center  ">
-                    <div className='star-div flex pr-5'>
-                        <img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" /><img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" /><img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" />
+            <section className="py-20 backdrop-blur-[1px] z-[1]">
+                <div className="flex justify-center">
+                    <div className="star-div flex pr-5">
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
                     </div>
-                    <span className='text-center font-apexFont   text-6xl'>APEX'</span>
-                    <span className='font-apexFont text-6xl  text-apexGold'>25</span>
-                    <div className='star-div flex pl-5'>
-                        <img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" /><img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" /><img src="https://www.svgrepo.com/show/315891/star-gold-orange.svg" alt="" />
+                    <span className="text-center font-apexFont text-3xl md:text-6xl">APEX'</span>
+                    <span className="font-apexFont md:text-6xl text-3xl text-apexGold">25</span>
+                    <div className="star-div flex pl-5">
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
+                        <img
+                            src="https://www.svgrepo.com/show/315891/star-gold-orange.svg"
+                            className="w-[20px] md:w-[30px]"
+                            alt=""
+                        />
                     </div>
                 </div>
-                <p className='text-center text-lg font-poppins'>Leading the way!</p>
+                <p className="text-center text-lg font-poppins">Leading the way!</p>
             </section>
-            <div className="card-section flex flex-wrap m-4 justify-around w-full">
-                <div className="card-div  flex flex-wrap  justify-around  w-full">
+            <div className="context-div flex flex-col md:flex-row  md:justify-around md:items-center  gap-10 flex-wrap">
 
-                    <div className="card-one relative ">
-                        <div className="bg-card-one w-[300px] h-[300px]  z-[-1] absolute down-square -rotate-6 rounded-md  bg-black "></div>
-                        <div className="bg-card-one w-[300px] h-[300px] z-[5]  center-square absolute rotate-10 rounded-md bg-[#b78727] "></div>
-                        <div className="bg-card-one w-[300px] h-[300px] z-10 relative   rounded-md  p-5 bg-apexGold">
-                            <p className=' font-apexFont  text-center capitalize text-3xl'>our mission</p>
-                            <p className=' py-5 font-poppins'>To offer world-class job-oriented courses with an ethical focus, for the benefit of all stakeholders.</p>
-                            <div className="flex justify-between w-full ">
-                                <img src="https://www.svgrepo.com/show/207979/door-doorway.svg" className='w-[100px]' alt="" />
-                                <img src="https://www.svgrepo.com/show/398620/window.svg" className='w-[100px]' alt="" />
-                            </div>
-                        </div>
+
+                <div className="  text-center md:h-[200px]  md:w-[300px] h-fit ">
+                    <div className=" text-2xl  md:text-3xl  uppercase text-center font-apexFont">OUR VISION</div>
+                    <div className="  text-lg  text-center font-poppins ">To offer world-class job-oriented courses with an ethical focus, for the benefit of all stakeholders.</div>
+                </div>
+
+
+                <div className="  text-center  md:h-[200px] md:w-[300px] h-fit  ">
+                    <div className="  md:mt-0   text-2xl md:text-3xl uppercase  font-apexFont">Our Mission</div>
+                    <div className=' text-center text-lg  font-poppins'>
+                        We commit ourselves to impart knowledge, skill and attitude to the students, to inculcate in them, a sense of discipline, with moral and ethical values, and to make them good citizens of India.
                     </div>
-                    <div className="card-two relative ">
-                        <div className="bg-card-one w-[300px] h-[300px] z-[-1] down-square  absolute -rotate-6 rounded-md bg-black "></div>
-                        <div className="bg-card-one w-[300px] h-[300px]  z-[5] center-square absolute rotate-10 rounded-md bg-[#b78727] "></div>
-                        <div className="bg-card-one w-[300px] h-[300px]  z-10 relative  rounded-md p-5  bg-apexGold">
-
-                            <p className=' font-apexFont  text-black text-center capitalize text-3xl  '>our vision</p>
-                            <p className='py-5  font-poppins'>A sense of discipline, with moral and ethical values, and to make them good citizens of India</p>
-                            <div className="flex justify-between w-full">
-                                <img src="https://www.svgrepo.com/show/207979/door-doorway.svg" className='w-[100px]' alt="" />
-                                <img src="https://www.svgrepo.com/show/398620/window.svg" className='w-[100px]' alt="" />
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    )
-}
 
-export default Home
+        </div>
+
+    );
+};
+
+export default Home;

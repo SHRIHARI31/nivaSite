@@ -1,4 +1,25 @@
-.card-heading{
- text-shadow: 0 1px 1px white;
+.card-heading {
+  text-shadow: 0 1px 1px white;
 }
 
+.clgLogo {
+  animation: float 3s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100%  {
+    transform: translateY(0px);
+  }
+}
+
+.back-side::-webkit-scrollbar {
+  display: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
